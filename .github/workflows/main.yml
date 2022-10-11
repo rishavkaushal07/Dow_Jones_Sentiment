@@ -37,7 +37,7 @@ jobs:
       - name: Push updated html to github.io page
         uses: ad-m/github-push-action@master
         with: #change all the "rishavkaushal07"s below to your username
-          github_token: ${{ secrets.TOKEN }}          
+          github_token: ${{ secrets.ACCESS_TOKEN }}          
           repository: "rishavkaushal07/rishavkaushal07.github.io"
           branch: "main"          
           directory: ./rishavkaushal07.github.io
