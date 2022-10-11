@@ -145,8 +145,8 @@ with open('dow_jones_live_sentiment.html', 'a') as f:
     f.truncate(0) # clear file if something is already written on it
     title = "<h1>Dow Jones Stock Sentiment Dashboard</h1>"
     updated = "<h2>Last updated: " + dt_string + " (Timezone: " + timezone_string + ")</h2>"
-    description = "This dashboard is updated every half an hour with sentiment analysis performed on latest scraped news headlines from the FinViz website.<br><br>"
-    code = """<a href="https://github.com/rishavkaushal07/dow_jones_live_stock_sentiment_treemap">Source Code</a>"""
-    author = """ | Created by RK Capital Research, check out my <a href="https://rishavkaushal07.github.io/">GitHub Page</a>"""
+    description = "This dashboard is updated every half an hour with sentiment analysis performed on latest scraped news headlines.<br><br>"
+    code = """ """
+    author = """<h4>Created by RK Capital Research</h4>"""
     f.write(title + updated + description + code + author)
     f.write(fig.to_html(full_html=False, include_plotlyjs='cdn')) # write the fig created above into the html file
