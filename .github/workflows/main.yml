@@ -25,7 +25,7 @@ jobs:
         run: python update_sentiment_page.py
         
       - name: Clone repo from your github.io page and commit newly generated sentiment html file
-        run: | #change all the "damianboh"s below to your username
+        run: | #change all the "rishavkaushal07"s below to your username
           git clone https://github.com/rishavkaushal07/rishavkaushal07.github.io.git/ 
           cp dow_jones_live_sentiment.html rishavkaushal07.github.io/dow_jones_live_sentiment.html 
           cd rishavkaushal07.github.io 
